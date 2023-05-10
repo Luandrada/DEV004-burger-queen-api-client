@@ -1,0 +1,14 @@
+<div class="headerContainer">
+    <img src="../../../../assets/img/burger.png" alt="logo" class="logo">
+    <div class="navContainer">
+        <nav>
+            <a [routerLink]="['/pedidos']" [ngClass]="{'activeLink': router.url === '/pedidos'}">Pedidos</a>
+            <a [routerLink]="['/crear-pedido']" [ngClass]="{'activeLink': router.url === '/crear-pedido'}">Crear Pedido</a>
+        </nav>
+        <img src="../../../../assets/img/camarera.png" alt="profile" class="profilePicture"   (click)="showMenu()" >
+    </div>
+    <div class="menu" #menuRef>
+        <a [routerLink]="['/inicio-de-sesion']" >Cerrar Sesión</a>
+    </div>
+
+</div>
